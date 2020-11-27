@@ -129,11 +129,11 @@ for keyword in list(df):
     interval = interval[maxLen]
     START_UP.append(interval)
     
-    interval = compute_down(keyword) #decresing interval
-    get_index = [len(interval[i]) for i in range(len(interval))]
+    interval_2 = compute_down(keyword)
+    get_index = [len(interval_2[i]) for i in range(len(interval_2))]
     maxLen = get_index.index(max(get_index))
-    interval = interval[maxLen]
-    START_DOWN.append(interval)
+    interval_2 = interval_2[maxLen]
+    START_DOWN.append(interval_2)
     
     PEAK_MONTH.append(df[keyword][1:].idxmax())  #get peak performance
     BOTTOM_MONTH.append(df[keyword][1:].idxmin()) #get bad performance
