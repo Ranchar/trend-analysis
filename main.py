@@ -152,7 +152,7 @@ RESULT['START_UP'] = START_UP
 RESULT['START_DOWN'] = START_DOWN
 RESULT['PEAK_MONTH'] = PEAK_MONTH
 RESULT['BOTTOM_MONTH'] = BOTTOM_MONTH
-RESULT.to_csv('{}}.csv'.format(sheet_name),index=None, encoding='utf-8-sig')
+RESULT.to_csv('{}.csv'.format(sheet_name),index=None, encoding='utf-8-sig')
 
 end_time = time.time()
 dt_object = datetime.fromtimestamp(end_time)
